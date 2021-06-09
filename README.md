@@ -1,6 +1,8 @@
 # MovieLens
 
-This is the first of two projects that are required for the final course in the HarvardX Data Science Professional Certificate.
+This project is part of the "PH125.9x Data Science: Capstone" course on HarvardX. 
+The goal of this project is to create a recommendation system using the [MovieLens dataset](https://grouplens.org/datasets/movielens/latest/). For this project, to make computation simpler, we will be using the [10M version of the MovieLens dataset](http://grouplens.org/datasets/movielens/10m/). This dataset contains 10 million ratings of more than 10,000 movies given by about 70,000 users.
 
-The objective is to use the MovieLens dataset to create a movie recommendation system. We will use the 10 million recommendations version of the dataset (http://grouplens.org/datasets/movielens/10m/) to make the computation a little easier.
+We will build an algorithm that will predict the rating a particular user would give movie. To make the prediction, our model uses the movie, the user, and the year the movie was released. 
 
+To score how accurate the model predicts a given rating, we use root mean square error (RMSE) as a metric. Our final model has a **RMSE (_Root Mean Square Error_) of 0.8645.**
