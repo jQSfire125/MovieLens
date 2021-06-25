@@ -141,10 +141,10 @@ library(lubridate)
 # The timestamp shows the number of seconds elapsed since January 1st, 1970
 edx <- edx %>% 
   mutate(year_rated= year(as.Date(as.POSIXct(timestamp, 
-                                                          origin= "1970-01-01"))))
+                                             origin= "1970-01-01"))))
 validation <- validation %>% 
   mutate(year_rated= year(as.Date(as.POSIXct(timestamp, 
-                                                                        origin= "1970-01-01"))))
+                                             origin= "1970-01-01"))))
 
 # 2.3 Further visual exploration
 # Mean rating by movie age
